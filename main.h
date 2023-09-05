@@ -19,6 +19,7 @@
 #include <cstdlib>
 #include <cstdint>
 #include <cstring>
+#include <sstream>
 
 /*
  * PICO HEADERS
@@ -26,10 +27,13 @@
 #include "pico/stdlib.h"
 #include "pico/binary_info.h"
 #include "hardware/gpio.h"
-#include "hardware/i2c.h"
 #include "hardware/spi.h"
 #include "hardware/adc.h"
-#include "hardware/uart.h"
+
+//MY HEADERS 
+
+#include "./modules/spiInterface.cpp"
+#include "./modules/adcInputs.cpp"
 
 #ifdef __cplusplus
 extern "C"
