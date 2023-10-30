@@ -12,6 +12,9 @@ using namespace std;
 
 int main() {
 
+    gpio_init(20);
+    gpio_put(20, 1);
+
     AdcController variableInputs;
     SpiInterface communication;
 
